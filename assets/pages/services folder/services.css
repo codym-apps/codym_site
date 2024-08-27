@@ -1,0 +1,110 @@
+@import '../../css/global.css';
+/*FONTS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170dvh;
+  background: url(../../images/global/black_brick_wall_background_1800x1600.jpg) center;
+  background-position: fixed;
+  filter: blur(7px);
+  z-index: -1;
+}
+
+/*GLOBAL STYLES*/
+
+/*TOP STYLES*/
+
+
+/*TOP STYLES*/
+
+/*SERVICES PAGE*/
+/*SERVICES PAGE*/
+/*SERVICES PAGE*/
+#services {
+  margin: 0 auto;
+  height: auto;
+  width: 80%;
+  border: 1px solid rgba(110, 110, 110, 0.54);
+  margin-top: 6dvh;
+  backdrop-filter: blur(5px);
+  background-color: #00000094;
+  color: rgb(95, 95, 95);
+}
+#services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.services-box {
+  display: flex;
+  gap: 10%;
+  background-color: #141618;
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 10px 0;
+}
+#first-box {
+  margin-top: 2%;
+}
+#last-box {
+  margin-bottom: 2%;
+}
+.container-box {
+  display: flex;
+  flex-direction: column;
+}
+.suport-box {
+  display: flex;
+  width: 8vw;
+  height: 14dvh;
+  margin-left: 5%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.img-box {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.img-box:hover {
+  transform: scale(120%);
+  color: rgb(255, 235, 235);
+}
+
+.button-box {
+  position: absolute;
+  color: rgb(33, 171, 125);
+  right: 3%;
+  height: 4dvh;
+  transform: translateY(200%);
+  width: 6%;
+  border: 2px gray solid;
+  cursor: pointer;
+}
+.button-box:hover {
+  background-color: rgb(225, 228, 227);
+}
+.button-box:active {
+  background-color: rgb(176, 176, 176);
+}
+#h1-services {
+  font-family: "Robot mono", cursive;
+  margin: 0 auto;
+  font-size: 4.5dvh;
+  color: rgb(149, 149, 149);
+  text-shadow: 2px 2px 3px gray;
+}
+.p-box {
+  width: 50vw;
+}
+/*SERVICES PAGE*/
+/*SERVICES PAGE*/
+/*SERVICES PAGE*/
+/*SERVICES PAGE*/
