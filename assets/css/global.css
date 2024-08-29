@@ -1,285 +1,305 @@
-@import './elements.css';
-@import './fonts.css';
-@import './normalize.css';
-@import './variables.css';
+@import "./elements.css";
+@import "./fonts.css";
+@import "./normalize.css";
+@import "./variables.css";
 
 #top {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 15dvh;
-    background-color: #12161c;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 15dvh;
+  background-color: #12161c;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#nav-top {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+#ul-top {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.li-top {
+  display: flex;
+  padding: 5px;
+  transition: width 2s ease-in-out;
+  width: max-content;
+  position: relative;
+  overflow: hidden;
+}
+.li-top:hover {
+  cursor: pointer;
+}
+.li-top:hover::after {
+  width: 100%;
+}
+.li-top::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 90%;
+  height: 2px;
+  background: linear-gradient(to right, white, rgba(232, 228, 246, 0));
+  transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.li-top .a-top {
+  text-decoration: none;
+  font-weight: 300;
+  color: rgb(232, 228, 246);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2dvh;
+}
+#img-logo-top {
+  width: 20%;
+}
+.container {
+  display: none;
+}
+/* From Uiverse.io by mobinkakei */
+/* From Uiverse.io by mobinkakei */
+/* From Uiverse.io by mobinkakei */
+.wrapper {
+  width: 10%;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 0.5s alternate infinite ease;
+}
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
   }
-  
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 0.5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+
+.shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+/* From Uiverse.io by mobinkakei */
+/* From Uiverse.io by mobinkakei */
+/* From Uiverse.io by mobinkakei */
+
+/* NAV GROUP*/
+/* NAV GROUP*/
+/* NAV GROUP*/
+
+#container {
+  margin-right: -50px;
+  display: none;
+}
+.label-check {
+  display: none;
+}
+
+.hamburger-label {
+  width: 10px;
+  height: 25px;
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger-label div {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.line1 {
+  transition: all 0.3s;
+}
+
+.line2 {
+  margin: 18px 0 0 0;
+  transition: 0.3s;
+}
+
+.line3 {
+  margin: 36px 0 0 0;
+  transition: 0.3s;
+}
+
+#label-check:checked + .hamburger-label .line1 {
+  transform: rotate(35deg) scaleX(0.55) translate(39px, -4.5px);
+  border-radius: 50px 50px 50px 0;
+}
+
+#label-check:checked + .hamburger-label .line3 {
+  transform: rotate(-35deg) scaleX(0.55) translate(39px, 4.5px);
+  border-radius: 0 50px 50px 50px;
+}
+
+#label-check:checked + .hamburger-label .line2 {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 25px;
+  height: 2px;
+}
+/* NAV GROUP*/
+/* NAV GROUP*/
+/* NAV GROUP*/
+
+/*HIDDEN BOX*/
+/*HIDDEN BOX*/
+/*HIDDEN BOX*/
+
+.input {
+  position: absolute;
+  right: 0%;
+  top: 15%;
+  display: none;
+  flex-direction: column;
+  width: 120px;
+  border: 2px solid rgba(128, 128, 128, 0.594);
+  background-color: #0d1117;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.value {
+  background-color: transparent;
+  font-size: 2vh;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.value:not(:active):hover,
+.value:focus {
+  background-color: #21262c;
+}
+
+.value:focus,
+.value:active {
+  background-color: #1a1f24;
+  outline: none;
+}
+
+.value::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  background-color: #2f81f7;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+.value svg {
+  width: 15px;
+}
+
+/*HIDDEN BOX*/
+/*HIDDEN BOX*/
+/*HIDDEN BOX*/
+
+@media (max-width: 650px) {
   #nav-top {
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
+    display: none;
   }
-  #ul-top {
-    flex-wrap: wrap;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    justify-content: space-evenly;
-    list-style-type: none;
-  }
-  .li-top {
-    display: flex;
-    padding: 5px;
-  }
-  .li-top .a-top {
-    text-decoration: none;
-    font-weight: 300;
-    color: rgb(232, 228, 246);
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    font-size: 2dvh;
+  .wrapper {
+    position: absolute;
+    transform: translateX(-50%);
   }
   #img-logo-top {
-    width: 20%;
+    margin-left: -10%;
   }
-  .container {
-    display: none;
-  }
-  /* From Uiverse.io by mobinkakei */
-  /* From Uiverse.io by mobinkakei */
-  /* From Uiverse.io by mobinkakei */
-  .wrapper {
-    width: 10%;
-    height: 60px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .circle {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border-radius: 50%;
-    background-color: #fff;
-    left: 15%;
-    transform-origin: 50%;
-    animation: circle7124 0.5s alternate infinite ease;
-  }
-  
-  @keyframes circle7124 {
-    0% {
-      top: 60px;
-      height: 5px;
-      border-radius: 50px 50px 25px 25px;
-      transform: scaleX(1.7);
-    }
-  
-    40% {
-      height: 20px;
-      border-radius: 50%;
-      transform: scaleX(1);
-    }
-  
-    100% {
-      top: 0%;
-    }
-  }
-  
-  .circle:nth-child(2) {
-    left: 45%;
-    animation-delay: 0.2s;
-  }
-  
-  .circle:nth-child(3) {
-    left: auto;
-    right: 15%;
-    animation-delay: 0.3s;
-  }
-  
-  .shadow {
-    width: 20px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 62px;
-    transform-origin: 50%;
-    z-index: -1;
-    left: 15%;
-    filter: blur(1px);
-    animation: shadow046 0.5s alternate infinite ease;
-  }
-  
-  @keyframes shadow046 {
-    0% {
-      transform: scaleX(1.5);
-    }
-  
-    40% {
-      transform: scaleX(1);
-      opacity: 0.7;
-    }
-  
-    100% {
-      transform: scaleX(0.2);
-      opacity: 0.4;
-    }
-  }
-  
-  .shadow:nth-child(4) {
-    left: 45%;
-    animation-delay: 0.2s;
-  }
-  
-  .shadow:nth-child(5) {
-    left: auto;
-    right: 15%;
-    animation-delay: 0.3s;
-  }
-  
-  /* From Uiverse.io by mobinkakei */
-  /* From Uiverse.io by mobinkakei */
-  /* From Uiverse.io by mobinkakei */
-  
-  /* NAV GROUP*/
-  /* NAV GROUP*/
-  /* NAV GROUP*/
-  
   #container {
-    margin-right: -50px;
-    display: none;
-  }
-  .label-check {
-    display: none;
-  }
-  
-  .hamburger-label {
-    width: 10px;
-    height: 25px;
     display: block;
-    cursor: pointer;
   }
-  
-  .hamburger-label div {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-  }
-  
-  .line1 {
-    transition: all 0.3s;
-  }
-  
-  .line2 {
-    margin: 18px 0 0 0;
-    transition: 0.3s;
-  }
-  
-  .line3 {
-    margin: 36px 0 0 0;
-    transition: 0.3s;
-  }
-  
-  #label-check:checked + .hamburger-label .line1 {
-    transform: rotate(35deg) scaleX(0.55) translate(39px, -4.5px);
-    border-radius: 50px 50px 50px 0;
-  }
-  
-  #label-check:checked + .hamburger-label .line3 {
-    transform: rotate(-35deg) scaleX(0.55) translate(39px, 4.5px);
-    border-radius: 0 50px 50px 50px;
-  }
-  
-  #label-check:checked + .hamburger-label .line2 {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 25px;
-    height: 2px;
-  }
-  /* NAV GROUP*/
-  /* NAV GROUP*/
-  /* NAV GROUP*/
-  
-  /*HIDDEN BOX*/
-  /*HIDDEN BOX*/
-  /*HIDDEN BOX*/
-  
-  .input {
-    position: absolute;
-    right: 0%;
-    top: 15%;
-    display: none;
-    flex-direction: column;
-    width: 120px;
-    border: 2px solid rgba(128, 128, 128, 0.594);
-    background-color: #0d1117;
-    justify-content: center;
-    border-radius: 5px;
-  }
-  
-  .value {
-    background-color: transparent;
-    font-size: 2vh;
-    border: none;
-    padding: 10px;
-    color: white;
-    display: flex;
-    position: relative;
-    gap: 5px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .value:not(:active):hover,
-  .value:focus {
-    background-color: #21262c;
-  }
-  
-  .value:focus,
-  .value:active {
-    background-color: #1a1f24;
-    outline: none;
-  }
-  
-  .value::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -10px;
-    width: 5px;
-    height: 80%;
-    background-color: #2f81f7;
-    border-radius: 5px;
-    opacity: 0;
-  }
-  
-  .value:focus::before,
-  .value:active::before {
-    opacity: 1;
-  }
-  
-  .value svg {
-    width: 15px;
-  }
-  
-  /*HIDDEN BOX*/
-  /*HIDDEN BOX*/
-  /*HIDDEN BOX*/
-  
-  @media (max-width: 650px) {
-    #nav-top {
-      display: none;
-    }
-    .wrapper {
-      position: absolute;
-      transform: translateX(-50%);
-    }
-    #img-logo-top {
-      margin-left: -10%;
-    }
-    #container {
-      display: block;
-    }
-  }
+}
