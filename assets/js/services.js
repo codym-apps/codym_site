@@ -2,65 +2,13 @@
 //Appear Hidden Box
 //Appear Hidden Box
 
-const navGroup = document.getElementById("container");
-const hiddenBox = document.getElementsByClassName("input");
-const hiddenBoxElements = document.getElementsByClassName("value");
 
-console.log(hiddenBox[0].style.display);
-const navGroupOnClick = () => {
-  navGroup.onclick = null;
-
-  if (
-    hiddenBox[0].style.display === "none" ||
-    hiddenBox[0].style.display === ""
-  ) {
-    hiddenBox[0].style.display = "flex";
-    console.log("open");
-  } else if (hiddenBox[0].style.display === "flex") {
-    hiddenBox[0].style.display = "none";
-    console.log("closed");
-  }
-
-  setTimeout(() => {
-    navGroup.onclick = navGroupOnClick;
-  }, 300);
-};
-
-navGroup.onclick = navGroupOnClick;
 
 //Appear Hidden Box
 //Appear Hidden Box
 //Appear Hidden Box
 
-const hiddenClick1 = () => {
-  console.log("1");
-  window.location = "index.html";
-};
-const hiddenClick2 = () => {
-  console.log("2");
-};
-const hiddenClick3 = () => {
-  console.log("3");
-};
-const hiddenClick4 = () => {
-  console.log("4");
-};
-const hiddenClick5 = () => {
-  console.log("5");
-};
 
-const clickFunctions = [
-  hiddenClick1,
-  hiddenClick2,
-  hiddenClick3,
-  hiddenClick4,
-  hiddenClick5,
-];
-
-Array.from(hiddenBoxElements).forEach((element, index) => {
-  element.onclick = clickFunctions[index];
-  console.log(element);
-});
 /* expanssion */
 
 const textLorem =
@@ -78,16 +26,19 @@ const buttonsExpansion = (i) => {
     setTimeout(() => {
       h1Box[i].innerText = "The examplification of the example examplificated";
       buttons[i].innerText = "Show less";
+
       pBox[i].innerText = textLorem + textLorem + textLorem;
+
       h1Box[i].style.opacity = "1";
       h1Box[i].style.transition = "0.5s ease";
+
       pBox[i].style.opacity = "1";
       pBox[i].style.transition = "0.5s ease";
-      buttons[i].innerText = "Show less";
+
       buttons[i].style.opacity = "1";
       buttons[i].style.transition = "0.5s ease";
-      buttons[i].style.transform = "translatey(20dvh)";
-      buttons[i].style.backgroundColor = "rgb(255, 235, 235)";
+      //buttons[i].style.transform = "translatey(20dvh)";
+      buttons[i].style.backgroundColor = "var(--claro-7)";
       buttons[i].style.color = "rgb(255, 0, 0)";
     }, 500);
 
@@ -97,7 +48,6 @@ const buttonsExpansion = (i) => {
     pBox[i].style.transition = "0.5s ease";
     buttons[i].style.opacity = "0";
     buttons[i].style.transition = "0.5s ease";
-    pBox[i].innerText = textLorem + textLorem + textLorem;
     suportBox[i].style.width = "12vw";
     suportBox[i].style.height = "12vw";
     suportBox[i].style.transition =
@@ -105,6 +55,10 @@ const buttonsExpansion = (i) => {
 
     console.log(h1Box);
     console.log("yeeeee");
+
+
+    window.parent.changeSizeIframe('100');
+
   } else {
     // Retração
     setTimeout(() => {
@@ -118,10 +72,13 @@ const buttonsExpansion = (i) => {
       pBox[i].style.transition = "0.5s ease";
       buttons[i].style.opacity = "1";
       buttons[i].style.transition = "0.5s ease";
-      buttons[i].style.transform = "translatey(200%)";
+      //buttons[i].style.transform = "translatey(200%)";
       buttons[i].style.backgroundColor = "";
       buttons[i].style.color = "";
     }, 500);
+
+    window.parent.changeSizeIframe('-100');
+
 
     h1Box[i].style.opacity = "0";
     h1Box[i].style.transition = "0.5s ease";
@@ -139,3 +96,4 @@ for (let i = 0; i < buttons.length; i++) {
   buttons[i].onclick = () => buttonsExpansion(`${i}`);
 }
 /* expanssion */
+

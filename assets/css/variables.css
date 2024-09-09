@@ -1,5 +1,15 @@
 :root{
-    --variable-name: variable;
-    --variable-name: #fff;
-    --variable-name: backdrop-filter: blur(2px);
+    --cinza-1: #2b2b31;
+    --cinza-2: #27272e;
+    --cinza-3: #2e2f34;
+    --cinza-4: #414141;
+    --cinza-5: #6b6b6b;
+    --cinza-6: #a7a7a7;
+
+    --claro-7: #e6eaee;
+    --claro-8: #f1c075;
+    --claro-9: #fff742;
+    --claro-10:#ffe896;
+    --claro-11:#966315;
+    --claro-12:#eed16a;
 }

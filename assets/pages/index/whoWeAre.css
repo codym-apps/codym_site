@@ -1,0 +1,100 @@
+#whoWeAre {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cinza-2);
+  height: 100dvh;
+  width: 100%;
+  align-items: center;
+  color: var(--claro-7);
+}
+#text-whoWeAre {
+  margin-top: 3%;
+  width: 100%;
+  text-align: center;
+  color: var(--claro-7);
+  font-weight: 100;
+}
+#introduction-whoWeAre {
+  color: var(--claro-8);
+  font-size: 1.5dvh;
+  font-weight: 300;
+  font-family: Roboto mono, cursive;
+}
+#h1-whoWeAre {
+  color: var(--claro-7);
+  font-size: 4.5dvh;
+  font-weight: 100;
+  font-family: Merriweather, cursive;
+}
+#p-whoWeAre-container {
+  color: var(--claro-7);
+  font-size: 1.8dvh;
+  font-weight: 100;
+  font-family: Roboto mono, cursive;
+  display: flex;
+  justify-content: center;
+}
+.p-whoWeAre {
+  width: 20%;
+  margin-top: 2%;
+  margin-right: 5%;
+  margin-left: 5%;
+  color: var(--claro-7);
+  font-weight: 300;
+}
+#box-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+.box-whoWeAre {
+  width: 18vw;
+  height: 17vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cinza-3);
+  border-bottom: 1px solid gray;
+}
+.img-box {
+  width: 50%;
+}
+.h6-box {
+  color: var(--claro-7);
+  font-size: 2.5dvh;
+  font-family: Roboto mono, cursive;
+  margin-bottom: 4%;
+  text-align: center;
+  padding: 10%;
+  height: 30%;
+}
+#number-whoWeAre-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 3%;
+}
+.number-whoWeAre {
+  width: 18vw;
+  text-align: center;
+  color: var(--claro-8);
+  font-size: 5dvh;
+  font-family: Roboto mono, cursive;
+}
+#text-box-whoWeAre-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.p-whoWeAre-box {
+  text-align: center;
+  width: 20%;
+  margin-top: 2%;
+  margin-right: 5%;
+  margin-left: 5%;
+}

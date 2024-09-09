@@ -1,4 +1,5 @@
 @import "../../css/global.css";
+@import "../../pages/index/whoWeAre.css";
 * {
   margin: 0;
   padding: 0;
@@ -10,33 +11,84 @@ body {
   background-color: #2e2f34;
 }
 #top {
-  background-color: #2b2b33;
-  box-shadow: 1px 1px 10px;
+  background-color: var(--cinza-2);
+  box-shadow: 1px 1px 3px rgb(97, 97, 97);
 }
 #first-page {
   min-height: 84.5dvh;
   display: flex;
   flex-direction: row;
-
 }
-#center-balloon {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 50%;
-  background-color: #303036;
+#first-page::after {
+  content: "";
   position: absolute;
-  left: 42.5vw;
-  top: 28dvh;
+  width: 100%;
+  top: 100.1%;
+  height: 100%;
+  box-shadow: 1px 1px 9px rgb(97, 97, 97);
+}
+
+#center-balloon {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  background-color: #2b2b31;
+  position: absolute;
+  flex-direction: column;
+  left: 32.5vw;
+  top: 25dvh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  box-shadow: 3px 3px 10px;
   transition: 0.5s;
+  cursor: pointer;
+}
+#center-balloon .text-balloon:first-of-type {
+  margin-top: 2.8dvh;
+}
+.text-balloon {
+  color: transparent;
+  text-indent: 10px;
+  transition: color 0.3s ease-in;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translateY(-150px);
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 100;
+  text-wrap: wrap;
+  flex-wrap: wrap;
+
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  font-family: monospace;
+  position: relative;
+  display: inline-block;
+}
+.text-balloon span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+#center-balloon:hover .text-balloon {
+  color: #e6eaee; /* Texto visível ao hover */
+  width: 90%;
+  height: 25px; /* Define a altura final do balão */
 }
 
 #logo-balloon {
-  width: 15vw;
+  width: 20vw;
   position: absolute;
+  transform: translateY(12dvh);
+  cursor: pointer;
+}
+
+#center-balloon:hover {
+  border-radius: 5%;
+  background-color: #414141;
 }
 #first-page-left {
   width: 50%;
@@ -147,7 +199,7 @@ body {
 #mascote {
   width: 8vw;
   height: 8vw;
-  background-color: #212127;
+  background-color: #2b2b31;
   border-radius: 50%;
   position: absolute;
   left: 85%;
@@ -163,14 +215,14 @@ body {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
   50% {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
   100% {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
 }
 #mascote:hover {
-  background-color: #2d2d35;
+  background-color: var(--cinza-1);
   cursor: pointer;
   animation: shadowPulse 1s ease-in-out infinite;
 }
@@ -179,7 +231,3 @@ body {
   width: 70%;
 }
 /*GLOBAL STYLES*/
-
-/*TOP STYLES*/
-
-/*TOP STYLES*/

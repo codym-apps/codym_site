@@ -1,36 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Codym site</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="../../js/script.js"></script>
-    <script defer src="../../js/whoWeAre.js"></script>
-    <link
-      rel="shortcut icon"
-      style="border-radius: 20%"
-      href="../../images/global/favicon.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <div id="all">
-      <div id="top">
-        <img
-          src="../../images/global/logo-test.png"
-          alt="[ERRO]"
-          id="img-logo-top"
-        />
+<div id="top">
+        <img src="../../images/global/logo-test.png" alt="[ERRO]" id="img-logo-top" />
 
         <div id="nav-top">
           <ul id="ul-top">
-            <li class="li-top"><a href="index.html" class="a-top">Home</a></li>
+            <li class="li-top">
+              <a href="../index/index.html" class="a-top">Home</a>
+            </li>
             <li class="li-top"><a href="" class="a-top">Quem somos</a></li>
             <li class="li-top">
-              <a href="../services folder/services.html" class="a-top"
-                >Serviços</a
-              >
+              <a href="services.html" class="a-top">Serviços</a>
             </li>
             <li class="li-top"><a href="" class="a-top">Objetivos</a></li>
             <li class="li-top"><a href="" class="a-top">Contato</a></li>
@@ -135,108 +113,3 @@
         </div>
         <!--hidden box-->
       </div>
-      <div id="first-page">
-        <div id="center-balloon">
-          <p class="text-balloon" class="typewritter">
-            Mais de xxxx linhas de código implementadas!
-          </p>
-          <p class="text-balloon" class="typewritter">
-            Um total atual de xx projetos prontos e entregues.
-          </p>
-          <p class="text-balloon" class="typewritter">
-            Amet quo architecto incidunt, eos veniam ipsa in labore deserunt
-            officiis.
-          </p>
-          <p class="text-balloon" class="typewritter">
-            Reprehenderit, voluptas iure odio temporibus iste!
-          </p>
-          <img
-            src="../../images/pages/programmer-profile.png"
-            alt=""
-            id="logo-balloon"
-          />
-        </div>
-        <div id="first-page-left">
-          <span class="span-first-page" id="span-one">Codym</span>
-          <span class="span-first-page" id="span-two">Business</span>
-          <button id="contact-first-page" type="button">CONTACT US</button>
-        </div>
-        <div id="first-page-right">
-          <h6 id="h6-introduction-first-page-right">INTRODUCTION</h6>
-          <span class="span-first-page-right" id="first-span-right"
-            >LOREM lorem lorem</span
-          ><br />
-          <span class="span-first-page-right">lorem lorem</span><br />
-          <span class="span-first-page-right">lorem</span><br />
-
-          <p id="p-first-page-right">
-            lorem lorem lorem lorem lorem lorem lorem <br />lorem lorem lorem
-            lorem lorem lorem lorem <br />lorem lorem lorem lorem lorem lorem
-            lorem lorem .<br />
-            lorem lorem lorem lorem lorem lorem lorem <br />lorem lorem lorem
-            lorem lorem lorem <br />
-            lorem.
-          </p>
-          <h6 id="h6-learn-more-first-page-right">learn more:</h6>
-
-          <div id="mascote">
-            <img
-              src="../../images/global/favicon.png"
-              alt=""
-              id="img-mascote"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div id="whoWeAre">
-        <div id="text-whoWeAre">
-          <h6 id="introduction-whoWeAre">INTRODUCTION</h6>
-          <h1 id="h1-whoWeAre">Quem somos & Oque oferecemos</h1>
-          <div id="p-whoWeAre-container">
-            <p class="p-whoWeAre">
-              Somos uma empresa que atualmente se situa no setor de
-              desenvolvimento tecnológico.
-            </p>
-            <p class="p-whoWeAre">
-              Nosso mercado de consumo nada mais é se não criação de projetos
-              seja ele web ou app.
-            </p>
-          </div>
-        </div>
-        <div id="box-container">
-          <div class="box-whoWeAre">
-            <h6 class="h6-box">Projetos entregues</h6>
-            <img src="../../images/pages/quem somos/45-455131_white-internet-icon-png-clipart-library-library-internet.png" alt="[ERRO]" class="img-box">
-          </div>
-          <div class="box-whoWeAre">
-            <h6 class="h6-box">Designs próprios</h6>
-            <img src="../../images/pages/quem somos/45-455131_white-internet-icon-png-clipart-library-library-internet.png" alt="[ERRO]" class="img-box">
-          </div>
-          <div class="box-whoWeAre">
-            <h6 class="h6-box">Litros de café consumidos</h6>
-            <img src="../../images/pages/quem somos/45-455131_white-internet-icon-png-clipart-library-library-internet.png" alt="[ERRO]" class="img-box">
-          </div>
-          <div class="box-whoWeAre">
-            <h6 class="h6-box">Linhas de código desenvolvidas</h6>
-            <img src="../../images/pages/quem somos/45-455131_white-internet-icon-png-clipart-library-library-internet.png" alt="[ERRO]" class="img-box">
-          </div>
-        </div>
-        <div id="number-whoWeAre-container">
-          <span class="number-whoWeAre">0</span>
-          <span class="number-whoWeAre">0</span>
-          <span class="number-whoWeAre">0</span>
-          <span class="number-whoWeAre">0</span>
-        </div>
-        <div id="text-box-whoWeAre-container">
-          <p class="p-whoWeAre-box">Somos uma empresa que atualmente se situa no setor de desenvolvimento tecnológico.</p>
-          <p class="p-whoWeAre-box">Somos uma empresa que atualmente se situa no setor de desenvolvimento tecnológico.</p>
-          <p class="p-whoWeAre-box">Somos uma empresa que atualmente se situa no setor de desenvolvimento tecnológico.</p>
-          <p class="p-whoWeAre-box">Somos uma empresa que atualmente se situa no setor de desenvolvimento tecnológico.</p>
-        </div>
-      </div>
-      <iframe src="../services folder/services.html" width="100%" height="1060" scrolling="no" frameborder="0" id="services-iframe"></iframe>
-
-    </div>
-  </body>
-</html>
